@@ -296,15 +296,15 @@
     font-weight:900;
 }
 .blogs-car-img{
-    border-radius: 5px;
-    border: 1px solid white;
-    padding:2px;
+    border-radius: 7px;
+    /* border: 1px solid white; */
+    padding:1px;
     
 }
 .card-body{
     border-bottom: 6px solid rgb(22, 109, 247);
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .card-title{
     color: rgb(22, 109, 247);
@@ -374,6 +374,13 @@
     text-align: -webkit-center;
     font-weight:600;
     border-bottom: 6px solid red;
+    transition: all 1s;
+}
+.find-area1:hover{
+    background-color:tomato;
+    /* color:rgb(155, 25, 2); */
+    color:white;
+    border-bottom: 6px solid white;
 }
 .find-area1 h3{
     font-weight:600;
@@ -387,6 +394,13 @@
     text-align: -webkit-center;
     font-weight:600;
     border-bottom: 6px solid red;
+    transition: all 1s;
+}
+.find-area2:hover{
+    background-color: gold;
+    /* color:#000; */
+    color:white;
+    border-bottom: 6px solid white;
 }
 .find-area2 h3{
     font-weight:600;
@@ -394,7 +408,7 @@
 .footer-header{
     background-color:black;
     padding-top:50px;
-    padding-bottom:50px;
+    padding-bottom:18px;
 }
 .footer-col h4{
     margin-left:30px;
@@ -412,7 +426,8 @@
     font-size:17px;
 }
 .footer-col{
-    border-bottom:2px solid white;
+    border-bottom:1px solid white;
+    margin-top:13px;
 }
 .form-heading{
     background-color:#434242;
