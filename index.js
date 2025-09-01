@@ -9,7 +9,7 @@ let blueColorCar = document.querySelector('#bluecolor');
 
     blackColorCar.addEventListener('click', function(event){
         let blackCar = document.querySelector('.all-type-car-color-manage');
-        blackCar.setAttribute('src','full-car22.PNG');
+        blackCar.setAttribute('src','full-car22.png');
         blackColorCar.setAttribute('class', 'border-color');
         
         mattColorCar.removeAttribute('class');
@@ -21,7 +21,7 @@ let blueColorCar = document.querySelector('#bluecolor');
 
     mattColorCar.addEventListener('click', function(){
         let mattCar = document.querySelector('.all-type-car-color-manage');
-        mattCar.setAttribute('src', 'full-car77.PNG');
+        mattCar.setAttribute('src', 'full-car77.png');
         mattColorCar.setAttribute('class', 'border-color');
 
         blackColorCar.removeAttribute('class');
@@ -33,7 +33,7 @@ let blueColorCar = document.querySelector('#bluecolor');
 
 redColorCar.addEventListener('click', function(){
      let redCar = document.querySelector('.all-type-car-color-manage');
-     redCar.setAttribute('src', 'ma.JPG');
+     redCar.setAttribute('src', 'ma.jpg');
      redColorCar.setAttribute('class', 'border-color');
 
      mattColorCar.removeAttribute('class');
@@ -44,7 +44,7 @@ redColorCar.addEventListener('click', function(){
 
 blueColorCar.addEventListener('click', function(){
      let blueCar = document.querySelector('.all-type-car-color-manage');
-     blueCar.setAttribute("src",'full-car33.PNG');
+     blueCar.setAttribute("src",'full-car33.png');
      blueColorCar.setAttribute('class', 'border-color');
 
      mattColorCar.removeAttribute('class');
@@ -53,7 +53,7 @@ blueColorCar.addEventListener('click', function(){
 });
 
 // Left-Hand Car Image changes
-let carChangeImage = ['full-car22.PNG', 'full-car77.PNG', 'ma.jpg', 'full-car33.PNG'];
+let carChangeImage = ['full-car22.png', 'full-car77.png', 'ma.jpg', 'full-car33.png'];
 let carChangeIndex1=3;
 let carChangeIndex2=0;
 let carChangeImageTag = document.querySelector('#carChangeImageTag');
