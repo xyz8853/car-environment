@@ -61,6 +61,7 @@
 }
 .navbar-header{
     background-color:#000;
+    /* margin:-12px 0px; */
 }
 .navbar-header .container-fluid .navbar-collapse .navbar-nav  li a{
     color:white;
@@ -521,4 +522,25 @@ a{
     width:100%;
     border-radius:10px;
     border-top:2px solid red;
+}
+/* .residental-customer-data{
+    display:none;
+} */
+
+.invoice-heading{
+    background-color: #008289;
+    color: white;
+    margin:0px;
+}
+.invoice-heading.h4{
+    background-color: #470486;
+}
+.table-row-1 td{
+    background-color:#008289!important;
+}
+.invoice-main-col .row{
+    margin:0px 5px;
+}
+.team-info img{
+    margin-bottom:15px;
 }
