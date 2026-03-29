@@ -28,17 +28,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
+                <a class="nav-link" href="blog.html">BLOG</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICE</a>
+                <a class="nav-link" href="service.html">SERVICE</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="carcustomer.html">SHOP</a>
@@ -54,7 +54,7 @@
         <div class="container-fluid">
             <div class="row form-row justify-content-center">
                 <div class="col-lg-8 col-md-8 col-sm-12 form-column">
-                    <form class="row g-3 needs-validation was-validated justify-content-center" novalidate>
+                    <form class="row g-3 needs-validation was-validated justify-content-center" onsubmit="carFormDataHandling(event)" novalidate>
                         <div class="col-lg-8 col-md-8 col-sm-12 text-center car-customer-payment">
                             <h2 class="header-heading-details">Customer & Car & Payment Details</h2>
                         </div>
@@ -62,146 +62,169 @@
                             <strong class="details">Customer Details</strong>
                         </div>
                         <div class="col-md-4">
-                          <label for="validationCustom01" class="form-label you-first-name">First name</label>
-                          <input type="text" class="form-control" id="validationCustom01" required="">
+                          <label for="buyerFirstName" class="form-label you-first-name">First name</label>
+                          <input type="text" class="form-control" id="buyerFirstName" name="buyerFirstName" required="">
                           <div class="valid-feedback">
                             successful!
                           </div>
                         </div>
                         <div class="col-md-4">
-                          <label for="validationCustom02" class="form-label">Last name</label>
-                          <input type="text" class="form-control" id="validationCustom02" required="">
+                          <label for="buyerLastName" class="form-label">Last name</label>
+                          <input type="text" class="form-control" id="buyerLastName" name="buyerLastName" required="">
                           <div class="valid-feedback">
                             successful!
                           </div>
                         </div>
                         <div class="col-md-4">
-                            <label for="validationCustom03" class="form-label">Middle name</label>
-                            <input type="text" class="form-control" id="validationCustom03" required="">
+                            <label for="buyerMiddleName" class="form-label">Middle name</label>
+                            <input type="text" class="form-control" id="buyerMiddleName" name="buyerMiddleName" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <label for="validationCustom04" class="form-label">Age</label>
-                            <input type="text" class="form-control" id="validationCustom04" required="">
+                        <div class="col-md-2">
+                            <label for="buyerAge" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="buyerAge" name="buyerAge" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                           </div>
                           <div class="col-md-4">
-                            <label for="validationCustom05" class="form-label">Mobile no.</label>
-                            <input type="text" class="form-control" id="validationCustom0t" required="">
+                            <label for="buyerMobileNo" class="form-label">Mobile no.</label>
+                            <input type="number" class="form-control" id="buyerMobileNo" name="buyerMobileNo" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                           </div>
                           <div class="col-md-4">
-                              <label for="validationCustom06" class="form-label">Email id</label>
-                              <input type="text" class="form-control" id="validationCustom06" required="">
+                              <label for="buyerEmailId" class="form-label">Email id</label>
+                              <input type="email" class="form-control" id="buyerEmailId" name="buyerEmailId" required="">
                               <div class="valid-feedback">
                                 successful!
                               </div>
                           </div>
-                        <div class="col-md-6">
-                          <label for="validationCustom07" class="form-label">City</label>
-                          <input type="text" class="form-control" id="validationCustom07" required="">
+                        <div class="col-md-6 col-sm-12">
+                          <label for="buyerCityName" class="form-label">Full Address</label>
+                          <input type="text" class="form-control" id="buyerCityName" name="buyerCityName" required="">
                           <div class="invalid-feedback">
                             Please provide a valid city.
                           </div>
                         </div>
-                        <div class="col-md-3">
-                          <label for="validationCustom08" class="form-label">State</label>
-                          <select class="form-select" id="validationCustom08" required="">
-                            <option selected="" disabled="" value="">Choose...</option>
-                            <option>...</option>
-                          </select>
-                          <div class="invalid-feedback">
-                            Please select a valid state.
-                          </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                          <label for="buyerStateName" class="form-label">State</label>
+                          <input type="text" class="form-control" name="buyerStateName" id="buyerStateName">
                         </div>
-                        <div class="col-md-3">
-                          <label for="validationCustom09" class="form-label">Zip</label>
-                          <input type="text" class="form-control" id="validationCustom09" required="">
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                          <label for="buyerZipNo" class="form-label">Zip</label>
+                          <input type="number" class="form-control" id="buyerZipNo" name="buyerZipNo" required="">
                           <div class="invalid-feedback">
                             Please provide a valid zip.
                           </div>
                         </div>
                         <div class="col-12">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
-                              <label class="form-check-label" for="invalidCheck">
+                              <input class="form-check-input" type="checkbox" value="true" id="checkResidentialAddresss" required="">
+                              <label class="form-check-label" for="checkResidentialAddresss">
                                 If parmanent address same residential address
                               </label>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="validationCustom010" class="form-label">City</label>
-                            <input type="text" class="form-control" id="validationCustom010" required="" disabled>
+                        <div class="residental-customer-data row">
+                           <div class="col-md-6 col-sm-12">
+                            <label for="buyerResidentialCityName" class="form-label">Full Address</label>
+                            <input type="text" class="form-control" id="buyerResidentialCityName" name="buyerResidentialCityName" value="" required="">
                             <!-- <div class="invalid-feedback">
                               Please provide a valid city.
                             </div> -->
                         </div>
-                        <div class="col-md-3">
-                            <label for="validationCustom011" class="form-label">State</label>
-                            <input type="text" class="form-control" id="validationCustom011" required="" disabled>
-                            <!-- <select class="form-select" id="validationCustom04" required="">
-                              <option selected="" disabled="" value="">Choose...</option>
-                              <option>...</option>
-                            </select> -->
-                            <!-- <div class="invalid-feedback">
-                              Please select a valid state.
-                            </div> -->
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <label for="buyerResidentialStateName" class="form-label">State</label>
+                            <input type="text" class="form-control" id="buyerResidentialStateName" name="buyerResidentialStateName" value="" required="">
                         </div>
-                        <div class="col-md-3">
-                            <label for="validationCustom012" class="form-label">Zip</label>
-                            <input type="text" class="form-control" id="validationCustom012" required="" disabled>
+                        <div class="col-lg-2 col-md-2 col-sm-3">
+                            <label for="buyerResidentialZipName" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="buyerResidentialZipNo" name="buyerResidentialZipNo" value="" required="">
                             <!-- <div class="invalid-feedback">
                             Please provide a valid zip.
                             </div> -->
+                        </div>
+                        </div>
+                       
+                        <!-- seller details -->
+                         <div class="col-12">
+                            <strong class="details">Seller Details</strong>
+                        </div>
+                         <div class="col-md-4">
+                            <label for="sellerName" class="form-label">Seller name</label>
+                            <input type="text" class="form-control" id="sellerName" name="sellerName" required="">
+                            <div class="valid-feedback">
+                              successful!
+                            </div>
+                        </div>
+                       
+                         <div class="col-md-4">
+                            <label for="sellerAddress" class="form-label">Seller mailing Address</label>
+                            <input type="text" class="form-control" id="sellerAddress" name="sellerAddress" required="">
+                            <div class="valid-feedback">
+                              successful!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                              <label for="sellerMobileNo" class="form-label">Contact No.</label>
+                              <input type="text" class="form-control" id="sellerMobileNo" name="sellerMobileNo" required="">
+                              <div class="valid-feedback">
+                                successful!
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="sellerStateName" class="form-label">State</label>
+                            <input type="text" class="form-control" id="sellerStateName" name="sellerStateName" required="">
+                            <div class="valid-feedback">
+                              successful!
+                            </div>
                         </div>
                         <!-- car details  -->
                         <div class="col-12">
                             <strong class="details">Car Details</strong>
                         </div>
                         <div class="col-md-4">
-                            <label for="validationCustom013" class="form-label">Car name</label>
-                            <input type="text" class="form-control" id="validationCustom013" required="">
+                            <label for="carFullName" class="form-label">Car name</label>
+                            <input type="text" class="form-control" id="carFullName" name="carFullName" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                         </div>
                           <div class="col-md-4">
-                            <label for="validationCustom014" class="form-label">Car colour</label>
-                            <input type="text" class="form-control" id="validationCustom014" required="">
+                            <label for="carColorName" class="form-label">Car colour</label>
+                            <input type="text" class="form-control" id="carColorName" name="carColorName" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                           </div>
                           <div class="col-md-4">
-                              <label for="validationCustom015" class="form-label">Car model</label>
-                              <input type="text" class="form-control" id="validationCustom015" required="">
+                              <label for="carModelName" class="form-label">Car model</label>
+                              <input type="text" class="form-control" id="carModelName" name="carModelName" required="">
                               <div class="valid-feedback">
                                 successful!
                               </div>
                           </div> 
                           <div class="col-md-4">
-                            <label for="validationCustom016" class="form-label">Car generation</label>
-                            <input type="text" class="form-control" id="validationCustom016" required="">
+                            <label for="carIdefNumber" class="form-label">Car identification number</label>
+                            <input type="text" class="form-control" id="carIdefNumber" name="carIdefNumber" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                         </div>
                           <div class="col-md-4">
-                            <label for="validationCustom017" class="form-label">Purches date</label>
-                            <input type="text" class="form-control" id="validationCustom017" required="">
+                            <label for="carPurchageData" class="form-label">Purches date</label>
+                            <input type="date" class="form-control" id="carPurchageDate" name="carPurchageDate" required="">
                             <div class="valid-feedback">
                               successful!
                             </div>
                           </div>
                           <div class="col-md-4">
-                              <label for="validationCustom018" class="form-label">Car price</label>
-                              <input type="text" class="form-control" id="validationCustom018" required="">
+                              <label for="carPrice" class="form-label">Car price</label>
+                              <input type="text" class="form-control" id="carPrice" name="carPrice" placeholder="₹" required="">
                               <div class="valid-feedback">
                                 successful!
                               </div>
@@ -214,8 +237,8 @@
                           <div class="col-md-4 text-start">
                             <select class="form-select" aria-label="Default select example" id="validationCustom019">
                                 <option value="select">Payment Mode</option>
-                                <option value="online" id="validationCustom020">Online</option>
-                                <option value="offline" class="offlineOption" id="validationCustom021">Offline</option>   
+                                <option value="online">Online</option>
+                                <option value="offline" class="offlineOption">Offline</option>   
                             </select>
                           </div>
                           <div class="col-md-4"></div>
@@ -228,22 +251,22 @@
                               <strong class="details bg-success text-white">OFFLINE PAYMENT DETAILS</strong>
                             </div>
                             <div class="col-md-4">
-                                <label for="validationCustom019" class="form-label">Total payment</label>
-                                <input type="text" class="form-control" id="validationCustom022" required="">
+                                <label for="totalPayment" class="form-label">Total payment</label>
+                                <input type="text" class="form-control" id="totalPayment" required="">
                                 <div class="valid-feedback">
                                   successful!
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="validationCustom020" class="form-label">Payment date</label>
-                                <input type="text" class="form-control" id="validationCustom023" required="">
+                                <label for="paymentDate" class="form-label">Payment date</label>
+                                <input type="text" class="form-control" id="paymentDate" required="">
                                 <div class="valid-feedback">
                                   successful!
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="validationCustom021" class="form-label">Pament receive</label>
-                                <input type="text" class="form-control" id="validationCustom024" required="">
+                                <label for="paymentServices" class="form-label">Pament receive</label>
+                                <input type="text" class="form-control" id="paymentServices" required="">
                                 <div class="valid-feedback">
                                   successful!
                                 </div>
@@ -256,14 +279,14 @@
                             <strong class="details bg-dark text-white">ONLINE PAYMENT DETAILS</strong>
                            </div>
                            <div class="col-md-4">
-                              <input class="form-check-input" type="radio" name="paymentTransaction" value="UPI" id="flexCheckDefault">
-                              <label class="form-check-label text-white" for="flexCheckDefault">
+                              <input class="form-check-input" type="radio" name="paymentTransaction" value="UPI" id="">
+                              <label class="form-check-label text-white" for="">
                                 UPI Transaction
                               </label>
                             </div>
                             <div class="col-md-4">
-                              <input class="form-check-input" type="radio" name="paymentTransaction" value="QR CODE" id="flexCheckDefault">
-                              <label class="form-check-label text-white" for="flexCheckDefault">
+                              <input class="form-check-input" type="radio" name="paymentTransaction" value="QR CODE" id="">
+                              <label class="form-check-label text-white" for="  ">
                                 <a class="qr-transaction" href="qrcode.html">QR Code Transaction</a>
                               </label>
                             </div>
@@ -276,7 +299,7 @@
 
                            <!-- end QR -->
                           <!-- end payment details -->
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                           <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
                             <label class="form-check-label" for="invalidCheck">
@@ -286,7 +309,7 @@
                               You must agree before submitting.
                             </div>
                           </div>
-                        </div>
+                        </div> -->
                         <div class="col-12">
                           <button class="btn btn-primary" type="submit" id="submitdetails">Submit Details</button>
                         </div>
