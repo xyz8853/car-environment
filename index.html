@@ -32,13 +32,13 @@
                 <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
+                <a class="nav-link" href="blog.html">BLOG</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#">ABOUT</a>
+                <a class="nav-link" href="about.html">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SERVICE</a>
+                <a class="nav-link" href="service.html">SERVICE</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="carcustomer.html">SHOP</a>
@@ -54,16 +54,16 @@
      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="full-car222.jpg" class="d-block w-100" alt="photo1...">
+            <img src="full-car222.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="full-car424.jpg" class="d-block w-100" alt="photo2...">
+            <img src="full-car424.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="full-car626.jpg" class="d-block w-100" alt="photo3...">
+            <img src="full-car626.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="full-car727.jpg" class="d-block w-100" alt="photo3...">
+            <img src="full-car727.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 mt-2">
                     <div class="image-changer">
-                        <img class="all-type-car-color-manage img-fluid" class="img-fluid" id="carChangeImageTag" src="full-car22.png" alt="">
+                        <img class="all-type-car-color-manage img-fluid" id="carChangeImageTag" src="full-car22.png" alt="">
                     </div>
                 </div>
                  <!-- responsive concept -->
@@ -175,7 +175,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-6 col-sm-6 more-buy-div">
                     <div class="text-center mt-5">
-                        <button class="buy-now-button">BUY NOW</button>
+                        <button class="buy-now-button"><a href="carcustomer.html">BUY NOW</a></button>
                     </div>
                 </div>
             </div>
@@ -193,34 +193,34 @@
                     </div>
                     <div class="loan-amount">
                         <strong class="left-loan text-white">Loan Amount(₹)</strong>
-                        <input class="right-loan" type="number" value="10000">
+                        <input class="right-loan" type="text" id="showLoanAmount" value="₹ 10000" disabled>
                     </div>
                     <div class="range-slider pt-sm-5 pb-sm-5 pb-6">
-                        <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;">
+                        <input type="range" class="text-theme w-100" id="loanAmount" min="10000" max="500000" step="500" value="10000" style="--rangeAfterwidth: 0%;">
                         <!-- <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;"> -->
                          <span class="min-value text-start">₹ 10 Thousand</span>
                          <span class="max-value text-end">₹ 1 Lakh</span>
                     </div>
                     <div class="loan-amount">
                         <strong class="left-loan text-white">Interest Rate (P.A)</strong>
-                        <input class="right-loan" type="text" value="8%">
+                        <input class="right-loan" type="text" value="1%" id="showRate" disabled>
                     </div>
                     <div class="range-slider pt-sm-5 pb-sm-5 pb-6">
-                        <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;">
+                        <input type="range" class="text-theme w-100" id="amountIntrest" min="1" max="30" step="0.5" value="1" style="--rangeAfterwidth: 0%;">
                         <!-- <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;"> -->
-                         <span class="min-value text-start">8 %</span>
+                         <span class="min-value text-start">1 %</span>
                          <span class="max-value text-end">15 %</span>
                     </div>
 
                     <div class="loan-amount">
-                        <strong class="left-loan text-white">Duration(Months)</strong>
-                        <input class="right-loan" type="number" value="12">
+                        <strong class="left-loan text-white">Duration(Years)</strong>
+                        <input class="right-loan" type="text" id="showDurationMonth" value="1 Yr" disabled>
                     </div>
                     <div class="range-slider pt-sm-5 pb-sm-5 pb-6">
-                        <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;">
+                        <input type="range" class="text-theme w-100" id="monthDuration" aria-valuenow="" min="1" max="10" step="1" value="1" style="--rangeAfterwidth: 0%;">
                         <!-- <input type="range" class="text-theme w-100" min="10000" max="100000" step="500" value="10000" style="--rangeAfterwidth: 0%;"> -->
-                         <span class="min-value text-start">12 Months</span>
-                         <span class="max-value text-end">60 Months</span>
+                         <span class="min-value text-start">1 Years</span>
+                         <span class="max-value text-end">10 Years</span>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 payment-handling">
@@ -228,10 +228,10 @@
                         <div class="emi-pay-heading"><h3>Monthly Payment (EMI)</h3></div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="monthly-payment">
-                                <h1 class="text-white cash-payment">₹ 7,829</h1>
+                                <h1 class="text-white cash-payment">₹ 0</h1>
                             </div>
                             <div class="apply-loan text-center">
-                                <button class="apply-button">APPLY NOW</button>
+                                <button class="apply-button" id="checkEMIBtn">CHECK EMI</button>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -393,4 +393,3 @@
    <script src="index.js"></script>
 </body>
 </html>
-
