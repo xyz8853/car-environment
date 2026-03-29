@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale Invoice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+<!-- style  -->
+<link rel="stylesheet" href="style.css">
+  <style>
+    body{
+       background-image: url('car_in_back.jpg');
+            /* Optional: Add other background properties for better control */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-size: cover;     /* Scales the image to cover the entire element */
+            background-position: center; /* Centers the image */
+            /* width:auto; */
+            height:auto;
+    }
+  </style>
+</head>
+<body>
+    <section class="sale-invoice-header mt-3 mb-3">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8 col-sm-8 bg-white invoice-main-col" style="margin: 0px; padding: 0px;">
+            <div class="text-center">
+              <h3 class="invoice-heading">INVOICE</h3>
+            </div>
+            <div class="row">
+              <div class="pruchase">
+                <h4>About Customer:</h4>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="">
+                  <ol>
+                    <li><strong>Name:</strong><span class="" id="custName"></span></li>
+                    <li><strong>Age:</strong><span id="custAge"></span></li>
+                    <li><strong>Email:</strong><span id="custEmail"></span></li>
+                    <li><strong>Phone no.:</strong><span id="custPhone"></span></li>
+                  </ol>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="">
+                  <ol>
+                    <li><strong>Parmanent Add.:</strong><span id="custParmAdd"></span></li>
+                    <li><strong>Residential Add.:</strong><span id="custResAdd"></span></li>
+                  </ol>
+                </div>
+              </div>  
+              <div class="pruchase">
+                <h4>About Seller:</h4>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="">
+                  <ol>
+                    <li><strong>Name:</strong><span id="sellName"></span></li>
+                    <li><strong>Mobile no.:</strong><span id="sellMob"></span></li>
+                  </ol>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="">
+                  <ol>
+                    <li><strong>Mailling Add.:</strong><span id="sellMailingAdd"></span></li>
+                  </ol>
+                </div>
+              </div>  
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="text-center mb-2">
+                  <h4 class="invoice-heading h4">Car Info</h4>
+                </div>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Make</th>
+                      <th>Model</th>
+                      <th>Body-Style</th>
+                      <th>New/Used</th>
+                      <th>Key No.</th>
+                      <th>Vin</th>
+                      <th>Upholstery-Specs</th>
+                      <th>Engine & Tran.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>suzuki</td>
+                      <td>suzuki YZ</td>
+                      <td>red</td>
+                      <td>NA</td>
+                      <td>9898760</td>
+                      <td>up-584384</td>
+                      <td>NA</td>
+                      <td>NA</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-hover">
+                  <thead>
+                    <th>Registration</th>
+                    <th>Mileage</th>
+                    <th>Engine Size</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>RE-0001190</td>
+                      <td>15km/liter</td>
+                      <td>500CC</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+              <div class="text-center">
+                <h4 class="invoice-heading h4">Insurance Details</h4>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                  <strong>Fire & Theft:</strong>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                  <strong>Public Liability_Amt:</strong>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                  <strong>Collision_Amt:</strong>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div>
+                  <strong>property Damage_Amt:</strong>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <table class="table table-hover">
+                  <thead class="bg-danger">
+                    <tr class="table-row-1">
+                      <th>Optional Equipment & Accessories</th>
+                      <th>Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Factory Installed</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Dealler Installed</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Price of the vehicle</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Sale Tax</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Delivered Price Extras</td>
+                      <td>$0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Total Price</td>
+                      <td>$0.00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pruchase">
+                <h4>Payment Details:</h4>
+                <p>Payment throught:</p>
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-12">
+                <p>...................................................................................</p>
+                <h6>Signature & Seal of company</h6>
+              </div>
+              <div class="col-lg-6 col-md-4 col-sm-12">
+                <p>....................................................................................</p>
+                <h6>Customer's Signature</h6>
+              </div>
+            </div>
+            <div class="text-center">
+              <h3 class="invoice-heading">...</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="print-btn text-center mb-3">
+      <button class="btn bg-success w-25 text-white" onclick="print()">Print</button>
+    </div>
+    <script src="car_sale_invoice_data.js"></script>
+</body>
+</html>
